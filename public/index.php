@@ -7,7 +7,10 @@ use proyecto\Controller\crearPersonaController;
 use proyecto\Models\User;
 use proyecto\Response\Failure;
 use proyecto\Response\Success;
+use proyecto\Models\orden_cita;
 
+
+Router::get('/orden',[orden_cita::class,"mostrarOrden"]);
 
 Router::get('/prueba',[crearPersonaController::class,"prueba"]);
 
